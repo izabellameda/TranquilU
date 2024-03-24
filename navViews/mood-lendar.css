@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3B4C88;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+:root {
+  --mood-color-1: #52e93f;
+  --mood-color-2: #32ca79;
+  --mood-color-3: #dff4c7;
+  --mood-color-4: #e4a46c;
+  --mood-color-5: #ea3d36;
+}
+
+body {
+  margin: 40px 0;
+    background: cornflowerblue;
+
+}
+
+h2 {
+  margin-bottom: 0;
+  color: white;
+  font-size: 30px;
+}
+
+h4 {
+  font-weight: 100;
+  margin: 5px 0 20px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.moods_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mood {
+  background-color: #7b74e7;
+  border: 0;
+  border-radius: 50%;
+  color: #000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.mood_1 {
+  color: var(--mood-color-1);
+}
+
+.mood_2 {
+  color: var(--mood-color-2);
+}
+
+.mood_3 {
+  color: var(--mood-color-3);
+}
+
+.mood_4 {
+  color: var(--mood-color-4);
+}
+
+.mood_5 {
+  color: var(--mood-color-5);
+}
+
+.mood.selected {
+  background-color: currentColor;
+}
+
+.mood.selected i {
+  color: #f74141;
+}
+
+.mood:active {
+  transform: scale(0.9);
+}
+
+.mood:focus {
+  outline: 0;
+}
+
+.mood i {
+  cursor: pointer;
+}
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.months {
+  padding: 10px;
+  width: 33%;
+}
+
+@media screen and (max-width: 756px) {
+  .months {
+    width: 50%;	
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .months {
+    width: 100%;	
+  }
+}
+
+.months h3 {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.days_container,
+.week_days_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days,
+.week_days {
+  font-size: 14px;
+  margin-bottom: 5px;
+  height: calc(100% / 7);
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+.days .circle {
+  background-color: #fdfdfd;
+  border-radius: 10%;
+  color: #020202;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+}
+
+.days .circle:hover {
+  transform: scale(1.1);
+}
+
+.action_btn {
+  border-radius: 10px 0 0 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 0;
+  position: fixed;
+  right: 0;
+  top: 40px;
+}
+
+.action_btn:active {
+  transform: scale(0.9);
+}
+
+.action_btn:focus {
+  outline: 0;
+}
+
+.randomize {
+  background-color: var(--mood-color-2);
+}
+
+.clear {
+  background-color: #801111;
+  top: 80px;
+}
+
+/* Credit for this goes to https://coderstar.in/mostpopular/moodC.html, a big help to the mood-lendar! */

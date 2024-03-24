@@ -1,0 +1,135 @@
+* {
+  font-family: "Source Code Pro", monospace;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.header h1 {
+  font-weight: lighter;
+}
+
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #3B4C88;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid black;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.our-mission {
+  width: 828px;
+  margin-right: 30px;
+}
+
+.our-mission h2 {
+  margin-top: -50px;
+  padding-top: 100px;
+  margin-left: 10px;
+  color: #3B4C88;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: absolute;
+  animation: cloudanim 5s infinite alternate;
+  background-image: url("images/cloudimage.png");
+  background-position: 0px 35px;
+  height: 90px;
+  width: 600px;
+}
+
+.our-mission p {
+  margin-top: 110px;
+  margin-left: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 70px;
+}
+
+button {
+  width: 275px;
+  height: 93.235px;
+  flex-shrink: 0;
+  background: #3B4C88;
+  color: white;
+}
+
+button:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+h2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+@keyframes cloudanim {
+  from {
+    transform: translate(-100px, -100px);
+  }
+  to {
+    transform: translate(-10px, -100px);
+  }
+}
+
+.get-started {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Optional: Add pointer cursor on hover */
+}
+
+.get-started:hover {
+  background-color: #0056b3;
+}

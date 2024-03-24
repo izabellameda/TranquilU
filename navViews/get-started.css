@@ -1,0 +1,95 @@
+* {
+  font-family: "Source Code Pro", monospace;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* {
+  font-family: "Source Code Pro", monospace;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+/* start of nav css */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #3B4C88;
+}
+
+/* end of nav css */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.main-title {
+  color: white;
+  font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Optional: Add pointer cursor on hover */
+}
+
+
+
+.button {
+  background-color: #0056b3;
+}
